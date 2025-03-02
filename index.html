@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 Circuits Globe Explorer</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/topojson@3"></script>
+  <style>
+    /* Set page background to black */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #1b1b1b; /* Black background for entire page */
+      color: white; /* Default text color */
+    }
+
+    /* Center and style the canvas with a black background */
+    canvas {
+      margin: auto;
+      display: block;
+      background-color: #1b1b1b; /* Black background for the canvas */
+    }
+
+    /* Style the country name label */
+    #countryName {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: white; /* White text for visibility on black background */
+    }
+  </style>
+</head>
+<body>
+  <div id="countryName">Country Name</div>
+  <canvas id="globeCanvas" width="600" height="400"></canvas>
+
+  <script src="globe.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
